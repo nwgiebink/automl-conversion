@@ -4,7 +4,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 
 
-def xml_to_automl(path, GoogleCloud_URI='GoogleCloudURI/'):
+def xml_to_automl(path, GoogleCloud_URI):
     xml_list = []
     for xml_file in glob.glob(path + '/*.xml'):
         tree = ET.parse(xml_file)
